@@ -34,7 +34,7 @@ export default ({ data }: { data: any }) => {
         <div>{node.relativeDirectory}</div>
         <div>{node.name}</div>
         <div>{node.name}</div>
-        <Grid container spacing={24} justify="center">
+        <Grid container spacing={8} justify="center">
           <ThumbGrid images={images} handleOpen={handleOpen} />
           {showLightbox && selectedImage !== null && (
             <LightBox

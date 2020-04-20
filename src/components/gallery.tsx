@@ -48,7 +48,7 @@ const GalleryComponent = () => {
       render={data => {
         const images = data.source.edges
         return (
-          <Grid container spacing={24} justify="center">
+          <Grid container spacing={8} justify="center">
             <ThumbGrid images={images} handleOpen={handleOpen} />
             {showLightbox && selectedImage !== null && (
               <LightBox
