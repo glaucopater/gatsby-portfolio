@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, SetStateAction } from "react"
 import { graphql, StaticQuery } from "gatsby"
 import ThumbGrid from "./thumbnails"
 import LightBox from "./lightbox"
@@ -6,9 +6,11 @@ import { Grid } from "@material-ui/core"
 
 const GalleryComponent = () => {
   const [showLightbox, setShowLightbox] = useState(false)
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState<
+    number | undefined | SetStateAction<null> | null
+  >(undefined)
 
-  const handleOpen = i => e => {
+  const handleOpen = (i: any) => () => {
     setShowLightbox(true)
     setSelectedImage(i)
   }
@@ -16,11 +18,13 @@ const GalleryComponent = () => {
     setShowLightbox(false)
     setSelectedImage(null)
   }
-  const handlePrevRequest = (i, length) => e => {
-    setSelectedImage((i - 1 + length) % length)
+  const handlePrevRequest = (i: any, length: any) => () => {
+    const res = (i - 1 + length) % length
+    setSelectedImage(res)
   }
-  const handleNextRequest = (i, length) => e => {
-    setSelectedImage((i + 1) % length)
+  const handleNextRequest = (i: any, length: any) => () => {
+    const res = (i + 1) % length
+    setSelectedImage(res)
   }
 
   return (

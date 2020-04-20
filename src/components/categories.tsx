@@ -17,7 +17,12 @@ const CategoriesComponent = () => {
       `}
       render={data => {
         const categories = Array.from(
-          new Set(data.source.edges.map(e => e.node.relativeDirectory))
+          new Set(
+            data.source.edges.map(
+              (e: { node: { relativeDirectory: any } }) =>
+                e.node.relativeDirectory
+            )
+          )
         )
         return categories.map((category, index) => (
           <li key={index}>

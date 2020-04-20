@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import { withStyles, ButtonBase, Grid } from "@material-ui/core"
 
-const style = theme => ({
+const style = (theme: any) => ({
   previewButton: {
     display: "inline-block",
     background: "transparent",
@@ -24,8 +24,16 @@ const style = theme => ({
   },
 })
 
-const ThumbGrid = ({ images, handleOpen, classes }) => {
-  return images.map((image, i) => (
+const ThumbGrid = ({
+  images,
+  handleOpen,
+  classes,
+}: {
+  images: any
+  handleOpen: any
+  classes: any
+}) => {
+  return images.map((image: any, i: any) => (
     <Grid item key={i}>
       <ButtonBase
         onClick={handleOpen(i)}

@@ -13,10 +13,16 @@ const Lightbox = ({
   handleClose,
   handlePrevRequest,
   handleNextRequest,
+}: {
+  images: any
+  selectedImage: any
+  handleClose: any
+  handlePrevRequest: any
+  handleNextRequest: any
 }) => {
-  const array = []
+  const array: any[] = []
 
-  images.forEach(image =>
+  images.forEach((image: { node: { childImageSharp: { fluid: any } } }) =>
     array.push(<NonStretchedImage fluid={image.node.childImageSharp.fluid} />)
   )
 
