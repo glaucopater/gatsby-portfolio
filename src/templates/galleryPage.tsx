@@ -34,7 +34,7 @@ export default ({ data }: { data: any }) => {
         <div>{node.relativeDirectory}</div>
         <div>{node.name}</div>
         <div>{node.name}</div>
-        <Grid container spacing={8} justify="center">
+        <div style={{ display: "flex", padding: "8px", flexWrap: "wrap" }}>
           <ThumbGrid images={images} handleOpen={handleOpen} />
           {showLightbox && selectedImage !== null && (
             <LightBox
@@ -45,7 +45,7 @@ export default ({ data }: { data: any }) => {
               selectedImage={selectedImage}
             />
           )}
-        </Grid>
+        </div>
       </div>
     </Layout>
   )

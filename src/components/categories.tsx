@@ -15,7 +15,7 @@ const CategoriesComponent = () => {
           }
         }
       `}
-      render={data => {
+      render={(data) => {
         const categories = Array.from(
           new Set(
             data.source.edges.map(
@@ -26,7 +26,7 @@ const CategoriesComponent = () => {
         )
         return categories.map((category, index) => (
           <li key={index}>
-            Category: <Link to={`/galleries/${category}`}> {category}</Link>
+            <Link to={`/galleries/${category}`}> {category}</Link>
           </li>
         ))
       }}

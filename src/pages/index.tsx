@@ -1,9 +1,7 @@
 import React from "react"
-
 import Layout from "../components/layout"
-import Gallery from "../components/gallery"
 import SEO from "../components/seo"
-import CategoriesComponent from "../components/categories"
+import Categories from "../components/categories"
 
 const IndexPage = () => {
   return (
@@ -14,9 +12,8 @@ const IndexPage = () => {
         meta={[]}
       />
       <h1>Welcome to my portfolio</h1>
-      <Gallery />
       <h2>Images by categories</h2>
-      <CategoriesComponent />
+      <Categories />
     </Layout>
   )
 }
