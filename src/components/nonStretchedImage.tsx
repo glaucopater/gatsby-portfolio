@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-const NonStretchedImage = props => {
+const NonStretchedImage = (props: any) => {
   let normalizedProps = props
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {

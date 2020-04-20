@@ -24,13 +24,13 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     result.data.allFile.edges.forEach(({ node }) => {
       createPage({
         // Decide URL structure
         path: `galleries/${node.relativeDirectory}`,
         // path to template
-        component: path.resolve(`./src/templates/galleryPage.js`),
+        component: path.resolve(`./src/templates/galleryPage.tsx`),
         context: {
           relativeDirectory: node.relativeDirectory,
         },

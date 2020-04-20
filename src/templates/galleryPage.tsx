@@ -5,11 +5,13 @@ import { Grid } from "@material-ui/core"
 import ThumbGrid from "../components/thumbnails"
 import LightBox from "../components/lightbox"
 
-export default ({ data }) => {
-  const [showLightbox, setShowLightbox] = useState(false)
-  const [selectedImage, setSelectedImage] = useState(null)
+//export const initialState = null:
 
-  const handleOpen = i => e => {
+export default ({ data }: { data: any }) => {
+  const [showLightbox, setShowLightbox] = useState(false)
+  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+
+  const handleOpen = (i: any) => () => {
     setShowLightbox(true)
     setSelectedImage(i)
   }
@@ -17,10 +19,10 @@ export default ({ data }) => {
     setShowLightbox(false)
     setSelectedImage(null)
   }
-  const handlePrevRequest = (i, length) => e => {
+  const handlePrevRequest = (i: any, length: any) => () => {
     setSelectedImage((i - 1 + length) % length)
   }
-  const handleNextRequest = (i, length) => e => {
+  const handleNextRequest = (i: any, length: any) => () => {
     setSelectedImage((i + 1) % length)
   }
   const node = data.allFile.edges[0].node
@@ -32,7 +34,7 @@ export default ({ data }) => {
         <div>{node.relativeDirectory}</div>
         <div>{node.name}</div>
         <div>{node.name}</div>
-        <Grid container spacing={24} justify="center">
+        <div style={{ display: "flex", padding: "8px", flexWrap: "wrap" }}>
           <ThumbGrid images={images} handleOpen={handleOpen} />
           {showLightbox && selectedImage !== null && (
             <LightBox
@@ -43,7 +45,7 @@ export default ({ data }) => {
               selectedImage={selectedImage}
             />
           )}
-        </Grid>
+        </div>
       </div>
     </Layout>
   )

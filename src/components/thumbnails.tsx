@@ -1,20 +1,18 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import { withStyles, ButtonBase, Grid } from "@material-ui/core"
 
-const style = theme => ({
+const style = () => ({
   previewButton: {
     display: "inline-block",
     background: "transparent",
     border: "none",
     padding: 0,
-    margin: 0,
+    margin: "8px",
     width: 200,
     height: 200,
     borderRadius: 4,
-
     boxShadow: "0 0 15px -5px rgba(0,0,0,0.3)",
   },
   thumbnail: {
@@ -24,9 +22,17 @@ const style = theme => ({
   },
 })
 
-const ThumbGrid = ({ images, handleOpen, classes }) => {
-  return images.map((image, i) => (
-    <Grid item key={i}>
+const ThumbGrid = ({
+  images,
+  handleOpen,
+  classes,
+}: {
+  images: any
+  handleOpen: any
+  classes: any
+}) => {
+  return images.map((image: any, i: any) => (
+    <div key={i}>
       <ButtonBase
         onClick={handleOpen(i)}
         className={classes.previewButton}
@@ -37,12 +43,8 @@ const ThumbGrid = ({ images, handleOpen, classes }) => {
           className={classes.thumbnail}
         />
       </ButtonBase>
-    </Grid>
+    </div>
   ))
 }
 
-ThumbGrid.propTypes = {
-  classes: PropTypes.object,
-  images: PropTypes.array,
-}
 export default withStyles(style)(ThumbGrid)
