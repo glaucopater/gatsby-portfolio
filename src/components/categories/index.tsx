@@ -1,5 +1,8 @@
 import React from "react"
-import { graphql, StaticQuery, Link } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
+import { SCLink } from "./styles"
+
+export type CategoriesType = string[]
 
 const CategoriesComponent = () => {
   return (
@@ -16,7 +19,7 @@ const CategoriesComponent = () => {
         }
       `}
       render={(data) => {
-        const categories = Array.from(
+        const categories: CategoriesType = Array.from(
           new Set(
             data.source.edges.map(
               (e: { node: { relativeDirectory: any } }) =>
@@ -26,7 +29,7 @@ const CategoriesComponent = () => {
         )
         return categories.map((category, index) => (
           <li key={index}>
-            <Link to={`/galleries/${category}`}> {category}</Link>
+            <SCLink to={`/galleries/${category}`}>{category}</SCLink>
           </li>
         ))
       }}

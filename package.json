@@ -1,13 +1,12 @@
 {
-  "name": "gatsby-portfolio",
-  "private": true,
-  "description": "Example using gatsby-image to built a custom lightbox carousel with @lightbox-react",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "glimpse",
+  "description": "a portfolio creatore",
+  "version": "2.0.0",
+  "author": "Glauco Pater",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
-    "@material-ui/core": "4.9.11",
+    "@types/styled-components": "^5.1.0",
     "babel-core": "^6.26.3",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.29",

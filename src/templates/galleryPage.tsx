@@ -55,12 +55,6 @@ export default ({ data }: { data: any }) => {
   )
 }
 
-// id
-// name
-// relativeDirectory
-// relativePath
-// absolutePath
-
 export const query = graphql`
   query($relativeDirectory: String!) {
     allFile(filter: { relativeDirectory: { eq: $relativeDirectory } }) {

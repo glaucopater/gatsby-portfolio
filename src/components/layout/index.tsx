@@ -7,8 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import Header from "../header"
 import "./layout.css"
 
 const Layout = ({ children }: { children: any }) => (
@@ -18,6 +17,7 @@ const Layout = ({ children }: { children: any }) => (
         site {
           siteMetadata {
             title
+            author
           }
         }
       }
@@ -34,7 +34,10 @@ const Layout = ({ children }: { children: any }) => (
           }}
         >
           <main>{children}</main>
-          <footer>© {new Date().getFullYear()}, All right reserved</footer>
+          <footer>
+            © {new Date().getFullYear()},{data.site.siteMetadata.author}, All
+            right reserved
+          </footer>
         </div>
       </>
     )}

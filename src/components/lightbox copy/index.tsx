@@ -5,7 +5,7 @@ import React from "react"
 import LightboxReact from "lightbox-react"
 import "lightbox-react/style.css"
 
-import NonStretchedImage from "./nonStretchedImage"
+import NonStretchedImage from "../nonStretchedImage"
 
 const Lightbox = ({
   images,

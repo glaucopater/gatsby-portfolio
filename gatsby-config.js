@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `Portfolio Creator`,
+    title: `Glimpse`,
+    description: `a photography portfolio `,
     author: `Glauco Pater`,
   },
   plugins: [

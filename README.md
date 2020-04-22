@@ -1,3 +1,15 @@
-## Example using gatsby-image to built a n image portfolioDetails in Docs
+## Glimpse
 
-https://www.gatsbyjs.org/packages/gatsby-image/
+# Photo portfolio made with Gatsby, GraphQL, TypeScript and Styled Components
+
+To install the dependencies
+
+- yarn (yes please use yarn with gatsby)
+
+To run the project locally
+
+- yarn start
+
+To create a production build
+
+- yarn build
