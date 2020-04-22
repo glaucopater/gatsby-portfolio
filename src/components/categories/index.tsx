@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import { SCLink } from "./styles"
+import { SCLink, SCListItem, SCList } from "./styles"
 
 export type CategoriesType = string[]
 
@@ -27,11 +27,12 @@ const CategoriesComponent = () => {
             )
           )
         )
-        return categories.map((category, index) => (
-          <li key={index}>
+        const categoriesItems = categories.map((category, index) => (
+          <SCListItem key={index}>
             <SCLink to={`/galleries/${category}`}>{category}</SCLink>
-          </li>
+          </SCListItem>
         ))
+        return <SCList>{categoriesItems}</SCList>
       }}
     />
   )
