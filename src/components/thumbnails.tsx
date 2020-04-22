@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
-
-import { withStyles, ButtonBase, Grid } from "@material-ui/core"
+import { withStyles } from "@material-ui/core"
+import ButtonBase from "@material-ui/core/ButtonBase"
 
 const style = () => ({
   previewButton: {
@@ -37,6 +37,7 @@ const ThumbGrid = ({
         onClick={handleOpen(i)}
         className={classes.previewButton}
         key={i}
+        aria-label="preview"
       >
         <Img
           fluid={image.node.childImageSharp.fluid}

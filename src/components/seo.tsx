@@ -90,7 +90,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-  description: ``,
+  description: `A photo portfolio`,
 }
 
 export type metaType = { name: string; content: any; property?: undefined }

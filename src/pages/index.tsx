@@ -7,6 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
+        lang="en"
         title="Home"
         keywords={[`gatsby`, `application`, `react`]}
         meta={[]}
