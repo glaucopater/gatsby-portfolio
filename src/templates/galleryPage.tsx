@@ -1,11 +1,9 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import { Grid } from "@material-ui/core"
 import ThumbGrid from "../components/thumbnails"
 import LightBox from "../components/lightbox"
-
-//export const initialState = null:
+import SEO from "../components/seo"
 
 export default ({ data }: { data: any }) => {
   const [showLightbox, setShowLightbox] = useState(false)
@@ -29,6 +27,12 @@ export default ({ data }: { data: any }) => {
   const images = data.allFile.edges
   return (
     <Layout>
+      <SEO
+        lang="en"
+        title="Home"
+        keywords={[`gatsby`, `application`, `react`]}
+        meta={[]}
+      />
       <div>
         <h1>{node.id}</h1>
         <div>{node.relativeDirectory}</div>
@@ -50,12 +54,6 @@ export default ({ data }: { data: any }) => {
     </Layout>
   )
 }
-
-// id
-// name
-// relativeDirectory
-// relativePath
-// absolutePath
 
 export const query = graphql`
   query($relativeDirectory: String!) {

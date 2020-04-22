@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `Portfolio Creator`,
+    title: `Glimpse`,
+    description: `a photography portfolio `,
     author: `Glauco Pater`,
   },
   plugins: [
@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
