@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import ThumbGrid from "../components/thumbnails"
 import LightBox from "../components/lightbox"
 import SEO from "../components/seo"
+import { SCThumbnailsWrapper } from "./styles"
 
 export default ({ data }: { data: any }) => {
   const [showLightbox, setShowLightbox] = useState(false)
@@ -25,6 +26,7 @@ export default ({ data }: { data: any }) => {
   }
   const node = data.allFile.edges[0].node
   const images = data.allFile.edges
+
   return (
     <Layout>
       <SEO
@@ -37,8 +39,7 @@ export default ({ data }: { data: any }) => {
         <h1>{node.id}</h1>
         <div>{node.relativeDirectory}</div>
         <div>{node.name}</div>
-        <div>{node.name}</div>
-        <div style={{ display: "flex", padding: "8px", flexWrap: "wrap" }}>
+        <SCThumbnailsWrapper>
           <ThumbGrid images={images} handleOpen={handleOpen} />
           {showLightbox && selectedImage !== null && (
             <LightBox
@@ -49,7 +50,7 @@ export default ({ data }: { data: any }) => {
               selectedImage={selectedImage}
             />
           )}
-        </div>
+        </SCThumbnailsWrapper>
       </div>
     </Layout>
   )

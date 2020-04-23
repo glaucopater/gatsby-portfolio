@@ -6,12 +6,17 @@ export const ButtonBase = styled.div``
 export const SCThumbnail = styled(Img)`
   width: 200px;
   height: 200px;
-  border-radius: 4px;
   cursor: pointer;
   margin: 4px;
+  transition: all 0.5s linear 0s;
+  opacity: 0.8;
   @media (max-width: 500px) {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: auto;
+    margin: 8px 0;
+  }
+  &:hover {
+    opacity: 1;
   }
 `
 

@@ -11,7 +11,7 @@ const NonStretchedImage = (props: any) => {
         maxWidth: props.fluid.presentationWidth,
         // maxHeight: window.innerHeight - 50,
         height: window.innerHeight - 50,
-        width: "2048px",
+        width: "auto",
         margin: "50px auto 0", // Used to center the image
       },
     }
