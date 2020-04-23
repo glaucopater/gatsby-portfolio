@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Header from "../header"
 import "./layout.css"
 import { SCPagecontent } from "./styles"
@@ -29,8 +29,9 @@ const Layout = ({ children }: { children: any }) => (
         <SCPagecontent>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()},{data.site.siteMetadata.author}, All
-            right reserved
+            Copyright © {new Date().getFullYear()}{" "}
+            {data.site.siteMetadata.author} |
+            <Link to={"/disclaimer"}>Disclaimer</Link>
           </footer>
         </SCPagecontent>
       </>

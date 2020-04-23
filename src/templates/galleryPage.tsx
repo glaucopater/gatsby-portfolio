@@ -27,7 +27,6 @@ export default ({ data }: { data: any }) => {
   const node = data.allFile.edges[0].node
   const images = data.allFile.edges
 
-  console.log(node, images)
   return (
     <Layout>
       <SEO
