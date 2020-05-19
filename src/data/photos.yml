@@ -1,36 +1,177 @@
-- title: Street
-  author: Street
-  image: ./street/street1.jpg
-- title: Street
-  author: Street
-  image: ./street/street2.jpg
-- title: Street
-  author: Street
-  image: ./street/street3.jpg
-- title: Street
-  author: Street
-  image: ./street/street4.jpg
-- title: Street
-  author: Street
-  image: ./street/street5.jpg
-- title: Street
-  author: Street
-  image: ./street/street6.jpg
-- title: Street
-  author: Street
-  image: ./street/street7.jpg
-- title: Street
-  author: Street
-  image: ./street/street8.jpg
-- title: Street
-  author: Street
-  image: ./street/street9.jpg
-- title: Street
-  author: Street
-  image: ./street/street10.jpg
-- title: Street
-  author: Street
-  image: ./street/street11.jpg
-- title: Street
-  author: Street
-  image: ./street/street12.jpg
+- title: 1-DSC_2281.jpg
+  author: Glauco Pater
+  image: ./photos/1-DSC_2281.jpg
+- title: 1-DSC_4154.JPG
+  author: Glauco Pater
+  image: ./photos/1-DSC_4154.JPG
+- title: 1-DSC_4159.JPG
+  author: Glauco Pater
+  image: ./photos/1-DSC_4159.JPG
+- title: 1-DSC_4190.JPG
+  author: Glauco Pater
+  image: ./photos/1-DSC_4190.JPG
+- title: 1-R0040528.JPG
+  author: Glauco Pater
+  image: ./photos/1-R0040528.JPG
+- title: 1-R0040622.JPG
+  author: Glauco Pater
+  image: ./photos/1-R0040622.JPG
+- title: 2-R0040624.JPG
+  author: Glauco Pater
+  image: ./photos/2-R0040624.JPG
+- title: 2-R0040710.JPG
+  author: Glauco Pater
+  image: ./photos/2-R0040710.JPG
+- title: 25-DSC_4419.JPG
+  author: Glauco Pater
+  image: ./photos/25-DSC_4419.JPG
+- title: DSC_1699.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_1699.jpg
+- title: DSC_2846.JPG
+  author: Glauco Pater
+  image: ./photos/DSC_2846.JPG
+- title: DSC_2996-001.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_2996-001.jpg
+- title: DSC_3001.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3001.jpg
+- title: DSC_3118.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3118.jpg
+- title: DSC_3171.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3171.jpg
+- title: DSC_3250.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3250.jpg
+- title: DSC_3285.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3285.jpg
+- title: DSC_3303.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3303.jpg
+- title: DSC_3306.jpg
+  author: Glauco Pater
+  image: ./photos/DSC_3306.jpg
+- title: DSC_3573.JPG
+  author: Glauco Pater
+  image: ./photos/DSC_3573.JPG
+- title: DSC_3600.JPG
+  author: Glauco Pater
+  image: ./photos/DSC_3600.JPG
+- title: glauco-pater-q_4RKLwMrbU-unsplash.jpg
+  author: Glauco Pater
+  image: ./photos/glauco-pater-q_4RKLwMrbU-unsplash.jpg
+- title: IMG_20190519_121727.jpg
+  author: Glauco Pater
+  image: ./photos/IMG_20190519_121727.jpg
+- title: R0020065-001.JPG
+  author: Glauco Pater
+  image: ./photos/R0020065-001.JPG
+- title: R0020080_merge-002.jpg
+  author: Glauco Pater
+  image: ./photos/R0020080_merge-002.jpg
+- title: R0020367.JPG
+  author: Glauco Pater
+  image: ./photos/R0020367.JPG
+- title: R0020372.JPG
+  author: Glauco Pater
+  image: ./photos/R0020372.JPG
+- title: R0020397_1.JPG
+  author: Glauco Pater
+  image: ./photos/R0020397_1.JPG
+- title: R0020627_1.JPG
+  author: Glauco Pater
+  image: ./photos/R0020627_1.JPG
+- title: R0020646.JPG
+  author: Glauco Pater
+  image: ./photos/R0020646.JPG
+- title: R0020695.JPG
+  author: Glauco Pater
+  image: ./photos/R0020695.JPG
+- title: R0020760.JPG
+  author: Glauco Pater
+  image: ./photos/R0020760.JPG
+- title: R0020768.JPG
+  author: Glauco Pater
+  image: ./photos/R0020768.JPG
+- title: R00208551.jpg
+  author: Glauco Pater
+  image: ./photos/R00208551.jpg
+- title: R0030043.JPG
+  author: Glauco Pater
+  image: ./photos/R0030043.JPG
+- title: R0030093.JPG
+  author: Glauco Pater
+  image: ./photos/R0030093.JPG
+- title: R0040068.jpg
+  author: Glauco Pater
+  image: ./photos/R0040068.jpg
+- title: R0040112.jpg
+  author: Glauco Pater
+  image: ./photos/R0040112.jpg
+- title: R0040134.JPG
+  author: Glauco Pater
+  image: ./photos/R0040134.JPG
+- title: R0040264.JPG
+  author: Glauco Pater
+  image: ./photos/R0040264.JPG
+- title: R0040304.JPG
+  author: Glauco Pater
+  image: ./photos/R0040304.JPG
+- title: R0040317.JPG
+  author: Glauco Pater
+  image: ./photos/R0040317.JPG
+- title: R0040434-001.JPG
+  author: Glauco Pater
+  image: ./photos/R0040434-001.JPG
+- title: R0050031.JPG
+  author: Glauco Pater
+  image: ./photos/R0050031.JPG
+- title: R0050036.JPG
+  author: Glauco Pater
+  image: ./photos/R0050036.JPG
+- title: R0050062.JPG
+  author: Glauco Pater
+  image: ./photos/R0050062.JPG
+- title: street10.jpg
+  author: Glauco Pater
+  image: ./photos/street10.jpg
+- title: street14.jpg
+  author: Glauco Pater
+  image: ./photos/street14.jpg
+- title: street15.jpg
+  author: Glauco Pater
+  image: ./photos/street15.jpg
+- title: street16.jpg
+  author: Glauco Pater
+  image: ./photos/street16.jpg
+- title: street17.jpg
+  author: Glauco Pater
+  image: ./photos/street17.jpg
+- title: street18.jpg
+  author: Glauco Pater
+  image: ./photos/street18.jpg
+- title: street19.jpg
+  author: Glauco Pater
+  image: ./photos/street19.jpg
+- title: street2.jpg
+  author: Glauco Pater
+  image: ./photos/street2.jpg
+- title: street20.jpg
+  author: Glauco Pater
+  image: ./photos/street20.jpg
+- title: street4.jpg
+  author: Glauco Pater
+  image: ./photos/street4.jpg
+- title: street6.jpg
+  author: Glauco Pater
+  image: ./photos/street6.jpg
+- title: street7.jpg
+  author: Glauco Pater
+  image: ./photos/street7.jpg
+- title: street9.jpg
+  author: Glauco Pater
+  image: ./photos/street9.jpg

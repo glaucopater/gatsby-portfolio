@@ -6,9 +6,6 @@ import Section, { Props } from "./Section"
 
 const PhotosSection = (props: Props) => (
   <Section {...props}>
-    <Heading id="photos" textAlign="center" py={4}>
-      Photos
-    </Heading>
     <StaticQuery
       query={graphql`
         {
@@ -33,11 +30,13 @@ const PhotosSection = (props: Props) => (
       `}
       render={(data) => (
         <Gallery
-          images={data.allPhotosYaml.edges.map(({ node }: any) => ({
-            id: node.image.id,
-            ...node.image.childImageSharp.fluid,
-            caption: `${node.title} – ${node.author}`,
-          }))}
+          images={data.allPhotosYaml.edges.map(({ node }: any) => {
+            return ({
+              id: node.image.id,
+              ...node.image.childImageSharp.fluid,
+              caption: `${node.title} – ${node.author}`,
+            })
+          })}
           itemsPerRow={[3, 3]}
         />
       )}

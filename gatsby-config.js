@@ -7,13 +7,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `galleries`,
-        path: `${__dirname}/src/assets/images/galleries`,
-      },
-    },
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
