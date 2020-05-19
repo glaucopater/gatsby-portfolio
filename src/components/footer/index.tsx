@@ -8,7 +8,7 @@ const Footer = ({ data }: { data: any }) => (
     <div
       style={{
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.45rem 1.0875rem 0`,
         margin: `0 auto`
       }}
     >

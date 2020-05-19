@@ -46,7 +46,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --log-pages --prefix-paths ",
+    "build": "gatsby build --log-pages --prefix-paths",
     "build-incremental-windows": "%npm_package_config_gatsby% && gatsby build --log-pages --prefix-paths",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
