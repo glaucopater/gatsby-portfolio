@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Glimpse`,
-    description: `a photography portfolio `,
+    description: `Glauco Pater's photography portfolio `,
     author: `Glauco Pater`,
   },
   plugins: [
@@ -39,6 +39,20 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Virgil"],
+          urls: ["fonts.css"],
+          //strategy: "selfHosted",
+        },
+      },
+      formats: ["woff2", "woff"],
+      useMinify: true,
+      usePreload: true,
+      //usePreconnect: false,
+    },
   ],
   pathPrefix: `/gatsbyPortfolio`,
 }

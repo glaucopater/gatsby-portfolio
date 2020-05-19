@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: any }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            description
             author
           }
         }
@@ -26,7 +26,7 @@ const Layout = ({ children }: { children: any }) => (
     `}
     render={(data) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
         <SCPagecontent>
           <main>{children}</main>
         </SCPagecontent>

@@ -14,7 +14,7 @@ const Footer = ({ data }: { data: any }) => (
     >
       Copyright © {new Date().getFullYear()}{" "}{data.site.siteMetadata.author} | <Link
         style={{
-          color: `white`,
+          color: '#111',
           textDecoration: `none`,
         }}
         to={"/disclaimer"}>Disclaimer</Link>

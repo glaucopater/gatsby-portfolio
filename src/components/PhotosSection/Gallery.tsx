@@ -1,8 +1,8 @@
-import Img from "gatsby-image"
 import React, { useState } from "react"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import { Box, Link } from "rebass"
 import { chunk, sum } from "../utils/array"
+import { SCImg } from "./styles"
 
 interface Props {
   images: {
@@ -49,14 +49,8 @@ const Gallery = ({
             openModal(i)
           }}
         >
-          <Img
+          <SCImg
             style={{
-              display: "inline-block",
-              verticalAlign: "middle",
-              transition: "filter 0.3s",
-              "& :hover": {
-                opacity: 0.7,
-              },
               width: rowAspectRatioSumsByBreakpoints.map(
                 (rowAspectRatioSums, j) => {
                   const rowIndex = Math.floor(i / itemsPerRowByBreakpoints[j])
