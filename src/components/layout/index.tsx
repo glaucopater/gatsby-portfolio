@@ -8,6 +8,7 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Header from "../header"
+import Footer from "../footer"
 import "./layout.css"
 import { SCPagecontent } from "./styles"
 
@@ -17,7 +18,7 @@ const Layout = ({ children }: { children: any }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            description
             author
           }
         }
@@ -25,15 +26,11 @@ const Layout = ({ children }: { children: any }) => (
     `}
     render={(data) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
         <SCPagecontent>
           <main>{children}</main>
-          <footer>
-            Copyright © {new Date().getFullYear()}{" "}
-            {data.site.siteMetadata.author} |
-            <Link to={"/disclaimer"}>Disclaimer</Link>
-          </footer>
         </SCPagecontent>
+        <Footer data={data} />
       </>
     )}
   />

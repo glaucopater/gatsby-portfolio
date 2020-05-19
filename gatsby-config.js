@@ -1,20 +1,28 @@
 module.exports = {
   siteMetadata: {
     title: `Glimpse`,
-    description: `a photography portfolio `,
+    description: `Glauco Pater's photography portfolio `,
     author: `Glauco Pater`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `galleries`,
-        path: `${__dirname}/src/assets/images/galleries`,
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -31,6 +39,20 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Virgil"],
+          urls: ["fonts.css"],
+          //strategy: "selfHosted",
+        },
+      },
+      formats: ["woff2", "woff"],
+      useMinify: true,
+      usePreload: true,
+      //usePreconnect: false,
+    },
   ],
   pathPrefix: `/gatsbyPortfolio`,
 }

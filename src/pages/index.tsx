@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Categories from "../components/categories"
+import PhotosSection from "../components/PhotosSection"
 
 const IndexPage = () => {
   return (
@@ -12,8 +12,7 @@ const IndexPage = () => {
         keywords={[`glimpse`, `portfolio`, `galleries`]}
         meta={[]}
       />
-      <h2>Categories</h2>
-      <Categories />
+      <PhotosSection />
     </Layout>
   )
 }
