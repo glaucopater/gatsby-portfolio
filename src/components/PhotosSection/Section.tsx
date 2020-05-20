@@ -8,6 +8,7 @@ export interface Props {
 
 const Section = ({ variant, ...props }: Props) => (
   <Box
+    m={3}
     as="section"
     {...(variant === "dark" && { bg: "darkgray", color: "white" })}
     {...props}
