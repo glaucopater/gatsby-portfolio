@@ -29,6 +29,7 @@ const PhotosSection = (props: Props) => (
       `}
       render={(data) => (
         <Gallery
+
           images={data.allPhotosYaml.edges.map(({ node }: any) => {
             return ({
               id: node.image.id,
