@@ -1,6 +1,5 @@
 import { graphql, StaticQuery } from "gatsby"
 import React from "react"
-import { Heading } from "rebass"
 import Gallery from "./Gallery"
 import Section, { Props } from "./Section"
 

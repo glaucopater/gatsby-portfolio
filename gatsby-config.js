@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Glimpse`,
-    description: `Glauco Pater's photography portfolio `,
+    description: `Glauco Pater's photography`,
     author: `Glauco Pater`,
   },
   plugins: [
@@ -55,4 +55,4 @@ module.exports = {
     },
   ],
   pathPrefix: `/gatsbyPortfolio`,
-}
+};
