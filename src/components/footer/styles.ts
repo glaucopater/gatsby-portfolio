@@ -19,5 +19,8 @@ export const SCLink = styled(Link)`
   color: #111;
   font-family: Virgil;
   text-decoration: none;
+  &:hover {
+    box-shadow: 5px 5px 5px 20px #111;
+  }
 `
 

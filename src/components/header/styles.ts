@@ -20,7 +20,13 @@ export const SCLink = styled(Link)`
   font-family: Virgil;
   font-weight: 100;
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   } 
+  
+`;
+
+export const SCDescription = styled.div`
+  margin: 0 2rem;
 `;
