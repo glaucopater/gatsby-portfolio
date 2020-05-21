@@ -1,5 +1,5 @@
 import React from "react"
-import { SCHeader, SCLink, SCTitle } from "./styles"
+import { SCHeader, SCLink, SCTitle, SCDescription } from "./styles"
 
 const HeaderBottom = () => {
   return (
@@ -21,7 +21,7 @@ const Header = ({ siteTitle, description }: { siteTitle: string, description?: s
       <h1 style={{ margin: 0 }}>
         <SCLink to="/">
           {siteTitle}
-          <div>{description}</div>
+          <SCDescription>{description}</SCDescription>
         </SCLink>
         <HeaderBottom />
       </h1>

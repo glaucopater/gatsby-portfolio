@@ -12,7 +12,7 @@ const IndexPage = () => {
         keywords={[`glimpse`, `portfolio`, `galleries`]}
         meta={[]}
       />
-      <h2>Nero</h2>
+      <h2 style={{ margin: "0 1rem" }}>Nero</h2>
       <PhotosSection />
     </Layout>
   )

@@ -1,6 +1,21 @@
 @font-face {
-    font-family: 'Virgil';
-    src: url('../../static/FG_Virgil.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Virgil";
+  src: url("../../static/FG_Virgil.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+header > div {
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 1.45rem 0px 0px;
+}
+
+h1 a {
+  text-decoration: none;
+  font-family: Virgil;
+}
+h1 a div {
+  margin: 0px 2rem;
+  font-family: Virgil;
 }
