@@ -1,11 +1,11 @@
 import React from "react"
-import { SCFooter, SCLink, SCCopyright } from "./styles"
+import { SCFooter, SCCopyright, SCDisclaimer } from "./styles"
 
 const Footer = ({ data }: { data: any }) => (
   <SCFooter>
     <SCCopyright>
-      Copyright © {new Date().getFullYear()}{" "}{data.site.siteMetadata.author}
-      <SCLink to={"/disclaimer"}>Disclaimer</SCLink>
+      {`Copyright © ${new Date().getFullYear()} ${data.site.siteMetadata.author}`}
+      <SCDisclaimer to={"/disclaimer"}>Disclaimer</SCDisclaimer>
     </SCCopyright>
   </SCFooter>
 )

@@ -1,26 +1,21 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { SCLink } from "../../styles/common"
+
 
 export const SCFooter = styled.footer`
   background: #f8f9fa;
   color: #111;
   font-family: Virgil;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 2rem;
 `
 
 export const SCCopyright = styled.div`
   max-width: 960px;
-  padding: 1.45rem 1.0875rem 0;
-  margin: 0 auto 50px;
+  margin: 1rem 0;
 `
 
-export const SCLink = styled(Link)`
-  background: #f8f9fa;
+export const SCDisclaimer = styled(SCLink)`
   float: right;
-  color: #111;
-  font-family: Virgil;
-  text-decoration: none;
-  &:hover {
-    box-shadow: 5px 5px 5px 20px #111;
-  }
 `
-
