@@ -13,7 +13,10 @@ const IndexPage = () => {
         meta={[]}
       />
       <h2 style={{ margin: "0px 1rem" }}>Curated Galleries:</h2>
-      <SCLink style={{ margin: "0px 1rem" }} to="/nero">Nero (Black and white pictures)</SCLink>
+      <ul>
+        <li><SCLink style={{ margin: "0px 1rem" }} to="/nero">Nero (Black and white pictures)</SCLink></li>
+        <li><SCLink style={{ margin: "0px 1rem" }} to="/color">Color</SCLink></li>
+      </ul>
     </Layout>
   )
 }

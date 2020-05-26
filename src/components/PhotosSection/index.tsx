@@ -3,12 +3,29 @@ import React from "react"
 import Gallery from "./Gallery"
 import Section, { Props } from "./Section"
 
-const PhotosSection = (props: Props) => (
+export const PhotosSection = (props: Props) => (
   <Section {...props}>
     <StaticQuery
       query={graphql`
         {
-          allPhotosYaml {
+          allBwYaml {
+            edges {
+              node {
+                title
+                author
+                image {
+                  id
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                      originalImg
+                    }
+                  }
+                }
+              }
+            }
+          }
+          allColorYaml {
             edges {
               node {
                 title
@@ -27,20 +44,27 @@ const PhotosSection = (props: Props) => (
           }
         }
       `}
-      render={(data) => (
-        <Gallery
-          images={data.allPhotosYaml.edges.map(({ node }: any) => {
-            return ({
-              id: node.image.id,
-              ...node.image.childImageSharp.fluid,
-              caption: `${node.title} – ${node.author}`,
-            })
-          })}
-          itemsPerRow={[3, 3]}
-        />
-      )}
+      render={(data) => {
+        const section = props.section[0].toUpperCase() + props.section.substr(1);
+        const sectionName = "all" + section + "Yaml";
+        return (
+          <Gallery
+            images={data[sectionName].edges.map(({ node }: any) => {
+              if (!node.image)
+                console.log("node", node);
+              return ({
+                id: node.image.id,
+                ...node.image.childImageSharp.fluid,
+                caption: `${node.title} – ${node.author}`,
+              })
+            })}
+            itemsPerRow={[2, 2]}
+          />
+        )
+      }
+      }
     />
   </Section>
 )
 
-export default PhotosSection
+export default PhotosSection;

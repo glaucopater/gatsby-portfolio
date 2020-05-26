@@ -51,11 +51,13 @@ const Gallery = ({
         >
           <SCImg
             style={{
+              margin: "10px 0",
               width: rowAspectRatioSumsByBreakpoints.map(
                 (rowAspectRatioSums, j) => {
                   const rowIndex = Math.floor(i / itemsPerRowByBreakpoints[j])
                   const rowAspectRatioSum = rowAspectRatioSums[rowIndex]
-                  return `${(image.aspectRatio / rowAspectRatioSum) * 100}%`
+                  const w = `${(image.aspectRatio / rowAspectRatioSum) * 100}%`
+                  return `calc(${w})`
                 }
               )[0],
             }}
