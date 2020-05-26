@@ -47,11 +47,9 @@ export const PhotosSection = (props: Props) => (
       render={(data) => {
         const section = props.section[0].toUpperCase() + props.section.substr(1);
         const sectionName = "all" + section + "Yaml";
-        console.log("sectionName", sectionName)
-
         return (
           <Gallery
-            images={data["all" + section + "Yaml"].edges.map(({ node }: any) => {
+            images={data[sectionName].edges.map(({ node }: any) => {
               if (!node.image)
                 console.log("node", node);
               return ({
