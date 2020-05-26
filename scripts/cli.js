@@ -1,3 +1,8 @@
-const utils = require("./utils")
-const path = "./src/data/photos/"
-utils.createYmlFile(path)
+/*
+    usage: 
+    node cli foldername
+*/
+
+const utils = require("./utils");
+const path = "./src/data/color/";
+utils.createYmlFile(path);

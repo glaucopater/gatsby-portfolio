@@ -12,8 +12,8 @@ const NeroPage = () => {
         keywords={[`glimpse`, `portfolio`, `galleries`]}
         meta={[]}
       />
-      <h2 style={{ margin: "0 1rem" }}>Nero</h2>
-      <PhotosSection section="bw" />
+      <h2 style={{ margin: "0 1rem" }}>Color</h2>
+      <PhotosSection section="color" />
     </Layout>
   )
 }
