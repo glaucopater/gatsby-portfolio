@@ -51,7 +51,7 @@ export const PhotosSection = (props: Props) => (
           <Gallery
             images={data[sectionName].edges.map(({ node }: any) => {
               if (!node.image)
-                console.log("node", node);
+                console.warn("node", node);
               return ({
                 id: node.image.id,
                 ...node.image.childImageSharp.fluid,

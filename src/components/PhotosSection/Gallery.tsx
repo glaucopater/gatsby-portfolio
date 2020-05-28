@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import Carousel, { Modal, ModalGateway } from "react-images"
-import { Box, Link } from "rebass"
+import { Link } from "rebass"
 import { chunk, sum } from "../utils/array"
-import { SCImg } from "./styles"
+import { SCImg, SCImageCaption } from "./styles"
+import { ColorThief, ColorThiefPalette } from "../ColorThief"
 
 interface Props {
   images: {
@@ -15,6 +16,16 @@ interface Props {
     caption: string
   }[]
   itemsPerRow?: number[]
+}
+
+
+const ImageCaption = ({ caption, originalImg }: { caption: string, originalImg: string }) => {
+  return (
+    <SCImageCaption>
+      <span style={{ marginRight: 4 }}>{caption}</span>
+      <ColorThief IMAGE_URL={originalImg} />
+      <ColorThiefPalette IMAGE_URL={originalImg} />
+    </SCImageCaption>)
 }
 
 const Gallery = ({
@@ -73,7 +84,7 @@ const Gallery = ({
               <Carousel
                 views={images.map(({ originalImg, caption }) => ({
                   source: originalImg,
-                  caption,
+                  caption: <ImageCaption caption={caption} originalImg={originalImg} />,
                 }))}
                 currentIndex={modalCurrentIndex}
                 components={{ FooterCount: () => null }}
