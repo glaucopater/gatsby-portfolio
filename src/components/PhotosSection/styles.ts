@@ -19,3 +19,9 @@ export const SCImg = styled(Img)`
   display: inline-block;
   vertical-align: middle;
 `;
+
+export const SCImageCaption = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-items: spac
+`;
