@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PhotosSection from "../components/PhotosSection"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import PhotosSection from "../components/PhotosSection";
 
 const NeroPage = () => {
   return (
@@ -12,10 +12,10 @@ const NeroPage = () => {
         keywords={[`glimpse`, `portfolio`, `galleries`]}
         meta={[]}
       />
-      <h2 style={{ margin: "0 1rem" }}>Nero</h2>
+      <h2 style={{ margin: "0 1rem" }}>Black and white</h2>
       <PhotosSection section="bw" />
     </Layout>
-  )
-}
+  );
+};
 
-export default NeroPage
+export default NeroPage;

@@ -4,5 +4,5 @@
 */
 
 const utils = require("./utils");
-const path = "./src/data/color/";
-utils.createYmlFile(path);
+const sourcePath = process.argv[2];
+utils.createYmlFile(sourcePath);
