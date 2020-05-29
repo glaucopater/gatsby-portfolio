@@ -4,7 +4,6 @@ export const SCPagecontent = styled.div`
   margin: 0 auto;
   max-width: 960px;
   padding: 0 1.0875rem 1.45rem;
-  padding-top: 0;
   @media (max-width: 500px) {
     padding: 0;
   }

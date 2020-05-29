@@ -6,9 +6,10 @@ export const SCLink = styled(Link)`
   color: #111;
   font-family: Virgil;
   text-decoration: none;
+  &:hover {
+    text-shadow: 1px 1px 1px #11111150;
+  }
 `;
-
-
 
 export const SCMain = styled.main`
   padding: 1.45rem 1.0875rem 0;
