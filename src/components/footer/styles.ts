@@ -1,6 +1,5 @@
-import styled from "styled-components"
-import { SCLink } from "../../styles/common"
-
+import styled from "styled-components";
+import { SCLink } from "../../styles/common";
 
 export const SCFooter = styled.footer`
   background: #f8f9fa;
@@ -9,13 +8,18 @@ export const SCFooter = styled.footer`
   margin: 0 auto;
   max-width: 960px;
   padding: 0 2rem;
-`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+`;
 
 export const SCCopyright = styled.div`
   max-width: 960px;
-  margin: 1rem 0;
-`
+`;
 
 export const SCDisclaimer = styled(SCLink)`
-  float: right;
-`
+  &:hover {
+    text-shadow: 1px 1px 1px #11111150;
+  }
+`;
