@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
+import styled from "styled-components";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
 
 export const SCLink = styled(Link)`
   text-transform: capitalize;
@@ -23,5 +23,4 @@ export const SCImg = styled(Img)`
 export const SCImageCaption = styled.div`
     display: flex;
     flex-direction: row;
-    justify-items: spac
 `;

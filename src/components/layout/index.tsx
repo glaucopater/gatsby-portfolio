@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
-import Header from "../header"
-import Footer from "../footer"
-import "./layout.css"
-import { SCPagecontent } from "./styles"
+import React from "react";
+import { StaticQuery, graphql, Link } from "gatsby";
+import Header from "../header";
+import Footer from "../footer";
+import "./layout.css";
+import { SCPagecontent } from "./styles";
 
-const Layout = ({ children }: { children: any }) => (
+const Layout = ({ children }: { children: any; }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -34,6 +34,6 @@ const Layout = ({ children }: { children: any }) => (
       </>
     )}
   />
-)
+);
 
-export default Layout
+export default Layout;

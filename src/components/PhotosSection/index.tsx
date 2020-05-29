@@ -1,7 +1,7 @@
-import { graphql, StaticQuery } from "gatsby"
-import React from "react"
-import Gallery from "./Gallery"
-import Section, { Props } from "./Section"
+import { graphql, StaticQuery } from "gatsby";
+import React from "react";
+import Gallery from "./Gallery";
+import Section, { Props } from "./Section";
 
 export const PhotosSection = (props: Props) => (
   <Section {...props}>
@@ -56,15 +56,15 @@ export const PhotosSection = (props: Props) => (
                 id: node.image.id,
                 ...node.image.childImageSharp.fluid,
                 caption: `${node.title} – ${node.author}`,
-              })
+              });
             })}
             itemsPerRow={[2, 2]}
           />
-        )
+        );
       }
       }
     />
   </Section>
-)
+);
 
 export default PhotosSection;
