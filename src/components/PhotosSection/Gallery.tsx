@@ -1,53 +1,52 @@
-import React, { useState } from "react"
-import Carousel, { Modal, ModalGateway } from "react-images"
-import { Link } from "rebass"
-import { chunk, sum } from "../utils/array"
-import { SCImg, SCImageCaption } from "./styles"
-import { ColorThief, ColorThiefPalette } from "../ColorThief"
+import React, { useState } from "react";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import { Link } from "rebass";
+import { chunk, sum } from "../utils/array";
+import { SCImg, SCImageCaption } from "./styles";
+import { ColorThief, ColorThiefPalette } from "../ColorThief";
 
 interface Props {
   images: {
-    id: string
-    aspectRatio: number
-    src: string
-    srcSet: string
-    sizes: string
-    originalImg: string
-    caption: string
-  }[]
-  itemsPerRow?: number[]
+    id: string;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
+    sizes: string;
+    originalImg: string;
+    caption: string;
+  }[];
+  itemsPerRow?: number[];
 }
 
 
-const ImageCaption = ({ caption, originalImg }: { caption: string, originalImg: string }) => {
+const ImageCaption = ({ caption, originalImg }: { caption: string, originalImg: string; }) => {
   return (
     <SCImageCaption>
       <span style={{ marginRight: 4 }}>{caption}</span>
-      <ColorThief IMAGE_URL={originalImg} />
       <ColorThiefPalette IMAGE_URL={originalImg} />
-    </SCImageCaption>)
-}
+    </SCImageCaption>);
+};
 
 const Gallery = ({
   images,
   itemsPerRow: itemsPerRowByBreakpoints = [1],
 }: Props) => {
-  const aspectRatios = images.map((image) => image.aspectRatio)
+  const aspectRatios = images.map((image) => image.aspectRatio);
   const rowAspectRatioSumsByBreakpoints = itemsPerRowByBreakpoints.map(
     (itemsPerRow) =>
       chunk(aspectRatios, itemsPerRow).map((rowAspectRatios) =>
         sum(rowAspectRatios)
       )
-  )
+  );
 
-  const [modalIsOpen, setModalIsOpen] = useState(false)
-  const [modalCurrentIndex, setModalCurrentIndex] = useState(0)
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
 
-  const closeModal = () => setModalIsOpen(false)
+  const closeModal = () => setModalIsOpen(false);
   const openModal = (imageIndex: number) => {
-    setModalCurrentIndex(imageIndex)
-    setModalIsOpen(true)
-  }
+    setModalCurrentIndex(imageIndex);
+    setModalIsOpen(true);
+  };
 
   return (
     <>
@@ -56,8 +55,8 @@ const Gallery = ({
           key={image.id}
           href={image.originalImg}
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-            e.preventDefault()
-            openModal(i)
+            e.preventDefault();
+            openModal(i);
           }}
         >
           <SCImg
@@ -65,10 +64,10 @@ const Gallery = ({
               margin: "10px 0",
               width: rowAspectRatioSumsByBreakpoints.map(
                 (rowAspectRatioSums, j) => {
-                  const rowIndex = Math.floor(i / itemsPerRowByBreakpoints[j])
-                  const rowAspectRatioSum = rowAspectRatioSums[rowIndex]
-                  const w = `${(image.aspectRatio / rowAspectRatioSum) * 100}%`
-                  return `calc(${w})`
+                  const rowIndex = Math.floor(i / itemsPerRowByBreakpoints[j]);
+                  const rowAspectRatioSum = rowAspectRatioSums[rowIndex];
+                  const w = `${(image.aspectRatio / rowAspectRatioSum) * 100}%`;
+                  return `calc(${w})`;
                 }
               )[0],
             }}
@@ -94,7 +93,7 @@ const Gallery = ({
         </ModalGateway>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;
