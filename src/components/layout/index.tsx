@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../header/index";
+import Footer from "../footer/index";
 import "./layout.css";
 import { SCPagecontent } from "./styles";
 
