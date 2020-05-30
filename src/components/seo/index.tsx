@@ -17,6 +17,7 @@ const SEO: React.FC<SEOProps> = ({
             title
             description
             author
+            version
           }
         }
       }

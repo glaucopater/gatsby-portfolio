@@ -13,6 +13,7 @@ const Layout = ({ children }: { children: any; }) => (
           siteMetadata {
             description
             author
+            version
           }
         }
       }
