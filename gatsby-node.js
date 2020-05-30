@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors;
     }
     createPage({
-      path: `/random/`,
+      path: `/random-v1/`,
       component: require.resolve("./src/templates/RandomSvgImageTemplate.tsx"),
       context: {
         images: result.data.allImageSharp.edges,

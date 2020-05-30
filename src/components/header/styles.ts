@@ -14,19 +14,6 @@ export const SCTitle = styled.div`
   padding: 1.45rem 0 0; 
 `;
 
-export const SCLink = styled(Link)`
-  background: #f8f9fa;
-  color: #111;
-  font-family: Virgil;
-  font-weight: 100;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  } 
-  
-`;
-
 export const SCDescription = styled.div`
   margin: 0 2rem;
 `;
