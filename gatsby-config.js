@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Glimpse`,
-    description: `Glauco Pater's photography`,
+    description: `Glauco Pater Photography`,
     author: `Glauco Pater`,
   },
   plugins: [
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/glimpse.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -62,6 +62,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `./src/data/color/`,
+      },
+    },
   ],
   pathPrefix: `/`,
 };
