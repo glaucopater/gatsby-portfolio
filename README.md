@@ -4,7 +4,7 @@
 
 To install the dependencies
 
-- yarn (yes please use yarn with gatsby)
+- yarn (yes please, use yarn with gatsby)
 
 To run the project locally
 
