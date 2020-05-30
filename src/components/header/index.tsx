@@ -1,5 +1,5 @@
-import React from "react"
-import { SCHeader, SCLink, SCTitle, SCDescription } from "./styles"
+import React from "react";
+import { SCHeader, SCLink, SCTitle, SCDescription } from "./styles";
 
 const HeaderBottom = () => {
   return (
@@ -12,10 +12,10 @@ const HeaderBottom = () => {
         </g>
       </g>
     </svg>
-  )
-}
+  );
+};
 
-const Header = ({ siteTitle, description }: { siteTitle: string, description?: string }) => (
+const Header = ({ siteTitle, description }: { siteTitle: string, description?: string; }) => (
   <SCHeader>
     <SCTitle>
       <h1 style={{ margin: 0 }}>
@@ -27,6 +27,6 @@ const Header = ({ siteTitle, description }: { siteTitle: string, description?: s
       </h1>
     </SCTitle>
   </SCHeader>
-)
+);
 
-export default Header
+export default Header;

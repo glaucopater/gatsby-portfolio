@@ -1,13 +1,12 @@
-import React from "react"
-import { ButtonBase, SCThumbnail } from "./styles"
-import GatsbyImage from "gatsby-image"
+import React from "react";
+import { ButtonBase, SCThumbnail } from "./styles";
 
 const ThumbGrid = ({
   images,
   handleOpen,
 }: {
-  images: any
-  handleOpen: any
+  images: any;
+  handleOpen: any;
 }) => {
   return images.map((image: any, i: any) => {
     return (
@@ -22,8 +21,8 @@ const ThumbGrid = ({
           />
         </ButtonBase>
       </div>
-    )
-  })
-}
+    );
+  });
+};
 
-export default ThumbGrid
+export default ThumbGrid;

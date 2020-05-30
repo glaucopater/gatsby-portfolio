@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { Link } from "rebass";
-import { chunk, sum } from "../utils/array";
+import { chunk, sum } from "../../utils/array";
 import { SCImg, SCImageCaption } from "./styles";
-import { ColorThief, ColorThiefPalette } from "../ColorThief";
+import { ColorThiefPalette } from "../ColorThief";
 
-interface Props {
-  images: {
-    id: string;
-    aspectRatio: number;
-    src: string;
-    srcSet: string;
-    sizes: string;
-    originalImg: string;
-    caption: string;
-  }[];
+
+export interface IImage {
+  id: string;
+  aspectRatio: number;
+  src: string;
+  srcSet: string;
+  sizes: string;
+  originalImg: string;
+  caption: string;
+}
+interface IGalleryProps {
+  images: IImage[];
   itemsPerRow?: number[];
 }
 
@@ -30,7 +32,7 @@ const ImageCaption = ({ caption, originalImg }: { caption: string, originalImg: 
 const Gallery = ({
   images,
   itemsPerRow: itemsPerRowByBreakpoints = [1],
-}: Props) => {
+}: IGalleryProps) => {
   const aspectRatios = images.map((image) => image.aspectRatio);
   const rowAspectRatioSumsByBreakpoints = itemsPerRowByBreakpoints.map(
     (itemsPerRow) =>

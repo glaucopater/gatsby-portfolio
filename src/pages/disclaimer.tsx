@@ -1,6 +1,6 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
 
 const NotFoundPage = () => (
   <Layout>
@@ -44,6 +44,6 @@ const NotFoundPage = () => (
     </p>
     </div>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
