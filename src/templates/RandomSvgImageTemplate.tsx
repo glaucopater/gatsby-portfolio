@@ -59,5 +59,4 @@ export default (props: { pageContext: any; }) => {
     const { aspectRatio } = randomImage.fluid;
     const randomSvg = aspectRatio >= 1 ? <SvgLandscape image={randomImage.fluid.src} aspectRatio={aspectRatio} /> : <SvgPortrait image={randomImage.fluid.src} />;
     return randomSvg;
-
 };

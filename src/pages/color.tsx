@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+import Layout from "../components/layout";
 import PhotosSection from "../components/PhotosSection";
+import SEO from "../components/seo";
 
 const ColorPage = () => {
   return (

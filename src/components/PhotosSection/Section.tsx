@@ -1,9 +1,9 @@
-import React from "react"
-import { Box } from "rebass"
+import React from "react";
+import { Box } from "rebass";
 
 export interface Props {
-  variant?: "light" | "dark"
-  [propName: string]: any // TODO: Extend type of `Box`
+  variant?: "light" | "dark";
+  [propName: string]: any; // TODO: Extend type of `Box`
 }
 
 const Section = ({ variant, ...props }: Props) => (
@@ -13,6 +13,6 @@ const Section = ({ variant, ...props }: Props) => (
     {...(variant === "dark" && { bg: "darkgray", color: "white" })}
     {...props}
   />
-)
+);
 
-export default Section
+export default Section;

@@ -1,7 +1,7 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
-import Header from "../Header";
-import Footer from "../Footer";
+import { StaticQuery, graphql } from "gatsby";
+import Header from "../header/index";
+import Footer from "../footer/index";
 import "./layout.css";
 import { SCPagecontent } from "./styles";
 
@@ -13,12 +13,13 @@ const Layout = ({ children }: { children: any; }) => (
           siteMetadata {
             description
             author
+            version
           }
         }
       }
     `}
     render={(data) => (
-        <>
+      <>
         <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
         <SCPagecontent>
           <main>{children}</main>
