@@ -29,8 +29,7 @@ export const SvgLandscape = (props: any) => {
     );
 };
 
-
-const SvgPortrait = (props: any) =>
+export const SvgPortrait = (props: any) =>
     (
         <svg
             viewBox="0 0 190 200"

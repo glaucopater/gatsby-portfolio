@@ -1,5 +1,6 @@
 import React from "react";
-import { SCHeader, SCLink, SCTitle, SCDescription } from "./styles";
+import { SCHeader, SCTitle, SCDescription } from "./styles";
+import { SCLink } from "../../styles/common";
 
 const HeaderBottom = () => {
   return (
