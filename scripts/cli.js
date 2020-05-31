@@ -1,6 +1,9 @@
 /*
-    usage: 
-    node cli foldername
+    usage (from root folder): 
+    
+    node scripts/cli.js src/data/color/ > src/data/color.yml
+    or in windows
+    node scripts\cli.js src/data/color/
 */
 
 const utils = require("./utils");
