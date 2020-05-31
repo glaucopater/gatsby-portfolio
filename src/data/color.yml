@@ -6,6 +6,14 @@
   author: Glauco Pater
   image: ./color/05-DSC_1699.jpg
 
+- title: Milano, Gae Aulenti (2017)
+  author: Glauco Pater
+  image: ./color/IMG_20170616_230859-02.jpeg
+
+- title: Milano, Rubattino (2018)
+  author: Glauco Pater
+  image: ./color/arrow.jpg
+
 - title: Berlin, Alexanderplatz (2018)
   author: Glauco Pater
   image: ./color/07-street19.jpg
@@ -22,7 +30,7 @@
   author: Glauco Pater
   image: ./color/12-street4.jpg
 
-- title: Berlin, Potstamer Bahnhof (2019)
+- title: Berlin, Potsdamer Bahnhof (2019)
   author: Glauco Pater
   image: ./color/13-DSC_3118.jpg
 
@@ -40,10 +48,6 @@
 
 - title: Berlin, Kreutzberg (2019)
   author: Glauco Pater
-  image: ./color/23-R0020372.jpg
-
-- title: Berlin, Kreutzberg (2019)
-  author: Glauco Pater
   image: ./color/24-R0020397_1.jpg
 
 - title: Berlin, Kreutzberg (2019)
@@ -54,7 +58,7 @@
   author: Glauco Pater
   image: ./color/28-street10.jpg
 
-- title: Berlin, Prenzaluerberg (2019)
+- title: Berlin, Prenzlauerberg (2019)
   author: Glauco Pater
   image: ./color/31-R00208551.jpg
 
@@ -90,10 +94,22 @@
   author: Glauco Pater
   image: ./color/55-R0050031.jpg
 
-- title: Berlin, Friedrichshain (2020)
+- title: Berlin Tempelhoferfeld (2020)
   author: Glauco Pater
-  image: ./color/56-R0050036.jpg
+  image: ./color/DSC_4548.JPG
 
-- title: Milano, Rubattino (2018)
+- title: Berlin, Neukölln (2020)
   author: Glauco Pater
-  image: ./color/arrow.jpg
+  image: ./color/R0060008.JPG
+
+- title: Berlin, Neukölln (2020)
+  author: Glauco Pater
+  image: ./color/R0060030.JPG
+
+- title: Berlin, Neukölln (2020)
+  author: Glauco Pater
+  image: ./color/R0060036.JPG
+
+- title: Berlin, Neukölln (2020)
+  author: Glauco Pater
+  image: ./color/R0060037.JPG

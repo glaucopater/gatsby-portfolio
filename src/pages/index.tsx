@@ -53,10 +53,11 @@ export default ({ data }: { data: any; }) => (
           }}>
             {randomSvg}
           </div>
-          <h2 style={{ margin: "0px 1rem" }}>Street photography</h2>
+          <h2 style={{ margin: "0px 1rem" }}>Sections</h2>
           <ul>
-            <li><SCLink style={{ margin: "0px 1rem" }} to="/bw">Black and white 📸</SCLink></li>
-            <li><SCLink style={{ margin: "0px 1rem" }} to="/color">Color 📸</SCLink></li>
+            <li><SCLink style={{ margin: "0px 1rem" }} to="/bw">Black and white Street Photography📸</SCLink></li>
+            <li><SCLink style={{ margin: "0px 1rem" }} to="/color">Color Street Photography📸</SCLink></li>
+            <li><SCLink style={{ margin: "0px 1rem" }} to="/abstract">Abstract 📸</SCLink></li>
           </ul>
         </Layout>
 

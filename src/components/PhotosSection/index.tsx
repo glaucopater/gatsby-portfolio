@@ -42,6 +42,23 @@ export const PhotosSection = (props: Props) => (
               }
             }
           }
+        allAbstractYaml {
+            edges {
+              node {
+                title
+                author
+                image {
+                  id
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                      originalImg
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       `}
       render={(data) => {
