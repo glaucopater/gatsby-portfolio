@@ -3,7 +3,7 @@ module.exports = {
     title: `Glimpse`,
     description: `Glauco Pater Photography`,
     author: `Glauco Pater`,
-    version: `2.0.3`,
+    version: `2.0.5`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
