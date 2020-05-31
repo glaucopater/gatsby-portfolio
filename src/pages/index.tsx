@@ -31,8 +31,8 @@ export default ({ data }: { data: any; }) => (
       const randomPosition = randomGenerator(0, edges.length - 1);
       const randomizedImage = edges[randomPosition].node;
       const { aspectRatio } = randomizedImage.fluid;
-      const randomSvg = aspectRatio >= 1 ? <SvgLandscape image={randomizedImage.fluid.src} aspectRatio={aspectRatio} /> :
-        <SvgPortrait image={randomizedImage.fluid.src} />;
+      const randomSvg = aspectRatio >= 1 ? <SvgLandscape image={randomizedImage.fluid.src} aspectRatio={aspectRatio} style={{ flex: 1 }} /> :
+        <SvgPortrait image={randomizedImage.fluid.src} style={{ flex: "1" }} />;
 
       return (
         <Layout>
@@ -43,7 +43,12 @@ export default ({ data }: { data: any; }) => (
             meta={[]}
           />
           <div style={{
-            width: "600px",
+            display: "flex",
+            alignItems: "center",
+            alignContent: "center",
+            justifyContent: "center",
+            justifyItems: "center",
+            maxWidth: "500px",
             margin: "0 auto"
           }}>
             {randomSvg}
