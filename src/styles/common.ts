@@ -15,7 +15,6 @@ export const SCMain = styled.main`
   padding: 1.45rem 1.0875rem 0;
 `;
 
-
 export const SCPageContent = styled.div`
   display: flex;
   place-content: space-around;
