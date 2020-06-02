@@ -29,7 +29,7 @@ export const SCCollapseMenu = styled.div<IProps>`
 
 export const SCMenuContent = styled.div<IProps>`
     transition: all 1s ease;
-    padding: 16px 0;
+    padding: 8px 0;
     ${props => props.isCollapsed ? "opacity: 0;" : "opacity: 1;"};
 `;
 

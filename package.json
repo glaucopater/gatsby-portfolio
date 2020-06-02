@@ -1,7 +1,7 @@
 {
   "name": "glimpse",
   "description": "a photo portfolio",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "author": "Glauco Pater",
   "dependencies": {
     "@babel/core": "^7.10.2",
