@@ -31,8 +31,8 @@ export default ({ data }: { data: any; }) => (
       const randomizedImage = edges[randomPosition].node;
       const { aspectRatio } = randomizedImage.fluid;
       const randomSvg = aspectRatio >= 1 ?
-        <SvgLandscape image={randomizedImage.fluid.src} aspectRatio={aspectRatio} style={{ flex: 1 }} /> :
-        <SvgPortrait image={randomizedImage.fluid.src} style={{ flex: "1" }} />;
+        <SvgLandscape image={randomizedImage.fluid.src} aspectRatio={aspectRatio} /> :
+        <SvgPortrait image={randomizedImage.fluid.src} />;
 
       return (
         <Layout>

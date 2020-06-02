@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SCLink } from "../../styles/common";
 
 
 interface IProps {
@@ -13,9 +14,10 @@ export const SCCollapseMenu = styled.div<IProps>`
 `;
 
 export const SCExpand = styled.div<IProps>`
-    margin: 0 8px;
+    margin: 0 1rem;
     transition: all 1s ease;
     text-transform: uppercase;
+    opacity: 0.5;
 
     @media (min-width: 878px) {
         text-orientation: upright;
@@ -23,7 +25,9 @@ export const SCExpand = styled.div<IProps>`
     }
     :hover {
         cursor: pointer;
+        opacity: 1;
     } 
+
     :after {
         font-size: 30px;
         ${props => props.isCollapsed ? "content: '+';" : "content: 'x';"};
@@ -40,3 +44,8 @@ export const SCMenuList = styled.ul`
     list-style-type: none;
     margin: 1rem 0;
 `;
+
+export const SCMenuLink = styled(SCLink)`
+    margin-left: 1rem;
+`;
+

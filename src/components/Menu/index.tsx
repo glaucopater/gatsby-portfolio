@@ -1,6 +1,6 @@
 import React from "react";
 import { SCLink } from "../../styles/common";
-import { SCMenuList, SCCollapseMenu, SCExpand, SCMenuContent } from "./styles";
+import { SCMenuList, SCCollapseMenu, SCExpand, SCMenuContent, SCMenuLink } from "./styles";
 
 const CollapseMenu: React.FC = () => {
   const [isCollapsed, setIsCollapsed] = React.useState(false);
@@ -15,12 +15,12 @@ const CollapseMenu: React.FC = () => {
         <SCMenuContent isCollapsed={isCollapsed}>
           <h3 style={{ margin: "0px 1rem" }}>Street Photography</h3>
           <SCMenuList>
-            <li key="bw"><SCLink style={{ margin: "0px 1rem" }} to="/bw">Black and white </SCLink></li>
-            <li key="color"><SCLink style={{ margin: "0px 1rem" }} to="/color">Color Street</SCLink></li>
+            <li key="bw"><SCMenuLink to="/bw">Black and white </SCMenuLink></li>
+            <li key="color"><SCMenuLink to="/color">Color Street</SCMenuLink></li>
           </SCMenuList>
           <h3 style={{ margin: "0px 1rem" }}>Concepts</h3>
           <SCMenuList>
-            <li key="abstract"><SCLink style={{ margin: "0px 1rem" }} to="/abstract">Abstract</SCLink></li>
+            <li key="abstract"><SCMenuLink to="/abstract">Abstract</SCMenuLink></li>
           </SCMenuList>
         </SCMenuContent>}
       <SCExpand onClick={handleClick} isCollapsed={isCollapsed} title={isCollapsed ? "Expand" : "Collapse"}>
