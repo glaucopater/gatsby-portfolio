@@ -11,9 +11,6 @@ const CollapseMenu: React.FC = () => {
 
   return (
     <SCCollapseMenu isCollapsed={isCollapsed}>
-      <SCExpand onClick={handleClick} isCollapsed={isCollapsed} title={isCollapsed ? "Expand" : "Collapse"}>
-        {isCollapsed ? "Menu" : " "}
-      </SCExpand>
       {!isCollapsed &&
         <SCMenuContent isCollapsed={isCollapsed}>
           <h3 style={{ margin: "0px 1rem" }}>Street Photography</h3>
@@ -26,7 +23,9 @@ const CollapseMenu: React.FC = () => {
             <li key="abstract"><SCLink style={{ margin: "0px 1rem" }} to="/abstract">Abstract</SCLink></li>
           </SCMenuList>
         </SCMenuContent>}
-
+      <SCExpand onClick={handleClick} isCollapsed={isCollapsed} title={isCollapsed ? "Expand" : "Collapse"}>
+        {isCollapsed ? "Menu" : " "}
+      </SCExpand>
     </SCCollapseMenu>
   );
 };

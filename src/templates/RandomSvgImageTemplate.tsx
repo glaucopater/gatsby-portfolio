@@ -1,5 +1,6 @@
 import React from "react";
 import { randomGenerator } from "../utils/data";
+import { SCSvg } from "./styles";
 
 export const SvgLandscape = (props: any) => {
     const { aspectRatio, ...svgProps } = props;
@@ -14,7 +15,7 @@ export const SvgLandscape = (props: any) => {
         image = <image href={props.image} x="12" y="12" width={170} />;
 
     return (
-        <svg viewBox="0 0 204 137.6" id="prefix__svg2" style={{ flex: 1 }} {...svgProps}>
+        <SCSvg viewBox="0 0 204 137.6" id="prefix__svg2" style={{ flex: 1 }} {...svgProps}>
             <g transform="matrix(.94718 0 0 1.00022 9.886 9.987)" id="prefix__g10">
                 <path
                     d="M-1.953-1.803C61.401.189 124.045-.453 183.949 1.293M.343.956C49.554.17 99.643.228 183.781.938m-1.123.784c1.201 33.565-.348 63.527-.334 116.814M184.689-.552c-1.29 30.13-.365 59.466-1.431 117.273m-.62-1.025c-52.025-1.146-104.35-.686-180.858 1.674m182.776.36c-57.346 1.486-112.377.74-184.944-.502m-1.52-.966C-1.113 81.602-.643 44.104-.583-.423m.461 118.262C1.813 90.056.94 61.175.686.568"
@@ -25,13 +26,13 @@ export const SvgLandscape = (props: any) => {
                 />
             </g>
             {image}
-        </svg>
+        </SCSvg>
     );
 };
 
 export const SvgPortrait = (props: any) =>
     (
-        <svg
+        <SCSvg
             viewBox="-10 0 190 200"
             id="prefix__svg2"
             {...props}
@@ -46,7 +47,7 @@ export const SvgPortrait = (props: any) =>
                 />
             </g>
             <image href={props.image} x="16" y="25" width={113} />
-        </svg>
+        </SCSvg>
     );
 
 

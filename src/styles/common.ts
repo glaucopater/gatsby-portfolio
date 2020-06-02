@@ -15,3 +15,13 @@ export const SCMain = styled.main`
   padding: 1.45rem 1.0875rem 0;
 `;
 
+
+export const SCPageContent = styled.div`
+  display: flex;
+  place-content: space-around;
+  margin: 0 auto;
+  flex-direction: row;
+  @media (max-width: 878px) {
+    flex-direction: column;
+  }
+`;

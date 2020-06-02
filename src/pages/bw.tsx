@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import PhotosSection from "../components/PhotosSection";
 import SEO from "../components/seo";
 import CollapseMenu from "../components/Menu";
+import { SCPageContent } from "../styles/common";
 
 const BwPage = () => {
   return (
@@ -13,15 +14,10 @@ const BwPage = () => {
         keywords={[`glimpse`, `portfolio`, `galleries`]}
         meta={[]}
       />
-      <h2 style={{ margin: "0 1rem", textAlign: "right" }}>Street / Black and white</h2>
-      <div style={{
-        display: "flex",
-        placeContent: "space-around",
-        margin: "0 auto"
-      }}>
+      <SCPageContent>
         <CollapseMenu />
-        <PhotosSection style={{ flex: 1 }} section="bw" />
-      </div>
+        <PhotosSection style={{ flex: 1 }} section="bw" title={"Street / Black and white"} />
+      </SCPageContent>
     </Layout >
   );
 };
