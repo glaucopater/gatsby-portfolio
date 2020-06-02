@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import PhotosSection from "../components/PhotosSection";
 import SEO from "../components/seo";
 import CollapseMenu from "../components/Menu";
+import { SCPageContent } from "../styles/common";
 
 const ColorPage = () => {
   return (
@@ -13,15 +14,10 @@ const ColorPage = () => {
         keywords={[`glimpse`, `portfolio`, `galleries`]}
         meta={[]}
       />
-      <h2 style={{ margin: "0 1rem", textAlign: "right" }}>Abstract</h2>
-      <div style={{
-        display: "flex",
-        placeContent: "space-around",
-        margin: "0 auto"
-      }}>
+      <SCPageContent>
         <CollapseMenu />
-        <PhotosSection style={{ flex: 1 }} section="abstract" />
-      </div>
+        <PhotosSection style={{ flex: 1 }} section="abstract" title={"Abstract"} />
+      </SCPageContent>
     </Layout>
   );
 };

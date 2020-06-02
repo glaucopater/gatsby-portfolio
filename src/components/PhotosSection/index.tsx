@@ -64,19 +64,23 @@ export const PhotosSection = (props: Props) => (
       render={(data) => {
         const section = props.section[0].toUpperCase() + props.section.substr(1);
         const sectionName = `all${section}Yaml`;
+
         return (
-          <Gallery
-            images={data[sectionName].edges.map(({ node }: any) => {
-              if (!node.image)
-                console.log("node", node);
-              return ({
-                id: node.image.id,
-                ...node.image.childImageSharp.fluid,
-                caption: `${node.title} – ${node.author}`,
-              });
-            })}
-            itemsPerRow={[2, 2]}
-          />
+          <>
+            <h2 style={{ margin: "0 1rem", textAlign: "right" }}>{props.title}</h2>
+            <Gallery
+              images={data[sectionName].edges.map(({ node }: any) => {
+                if (!node.image)
+                  console.log("node", node);
+                return ({
+                  id: node.image.id,
+                  ...node.image.childImageSharp.fluid,
+                  caption: `${node.title} – ${node.author}`,
+                });
+              })}
+              itemsPerRow={[2, 2]}
+            />
+          </>
         );
       }
       }

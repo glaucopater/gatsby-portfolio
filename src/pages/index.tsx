@@ -3,12 +3,10 @@ import { StaticQuery, graphql } from "gatsby";
 import { SvgLandscape, SvgPortrait } from "../templates/RandomSvgImageTemplate";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { SCLink } from "../styles/common";
+import { SCPageContent } from "../styles/common";
 import Menu from "../components/Menu";
+import { randomGenerator } from "../utils/data";
 
-const randomGenerator = (min: number, max: number) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
 
 export default ({ data }: { data: any; }) => (
   <StaticQuery
@@ -32,7 +30,8 @@ export default ({ data }: { data: any; }) => (
       const randomPosition = randomGenerator(0, edges.length - 1);
       const randomizedImage = edges[randomPosition].node;
       const { aspectRatio } = randomizedImage.fluid;
-      const randomSvg = aspectRatio >= 1 ? <SvgLandscape image={randomizedImage.fluid.src} aspectRatio={aspectRatio} style={{ flex: 1 }} /> :
+      const randomSvg = aspectRatio >= 1 ?
+        <SvgLandscape image={randomizedImage.fluid.src} aspectRatio={aspectRatio} style={{ flex: 1 }} /> :
         <SvgPortrait image={randomizedImage.fluid.src} style={{ flex: "1" }} />;
 
       return (
@@ -43,17 +42,11 @@ export default ({ data }: { data: any; }) => (
             keywords={[`glimpse`, `portfolio`, `galleries`]}
             meta={[]}
           />
-
-          <div style={{
-            display: "flex",
-            placeContent: "space-around",
-            margin: "0 auto"
-          }}>
+          <SCPageContent>
             <Menu />
             {randomSvg}
-          </div>
+          </SCPageContent>
         </Layout>
-
       );
     }}
   />
