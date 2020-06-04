@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Img from "gatsby-image";
+import { MD } from "../../styles/constants";
 
 export const ButtonBase = styled.div``;
 
@@ -10,8 +11,8 @@ export const SCThumbnail = styled(Img)`
   margin: 4px;
   transition: all 0.5s ease-out 0s;
   opacity: 0.8;
-  @media (max-width: 500px) {
-    width: 500px;
+  @media (max-width: ${MD}) {
+    width: ${MD};
     height: auto;
     margin: 8px 0;
    }

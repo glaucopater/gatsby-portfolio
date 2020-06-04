@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SCLink } from "../../styles/common";
+import { MD } from "../../styles/constants";
 
 
 interface IProps {
@@ -35,9 +36,12 @@ export const SCExpand = styled.div<IProps>`
 
 export const SCMenuContent = styled.div<IProps>`
     transition: all 1s ease;
-    padding: 8px 0;
+    padding: 32px 0 32px 32px;
+    
     ${props => props.isCollapsed ? "opacity: 0;" : "opacity: 1;"};
+
     @media (max-width: 878px) {
+        padding: 8px 0;
         display: flex;
         flex-direction: row;
         display: flex;
@@ -48,7 +52,7 @@ export const SCMenuContent = styled.div<IProps>`
             flex: 1;
         }
     }
-    @media (max-width: 500px) {
+    @media (max-width: ${MD}) {
         flex-direction: column;
     }
 `;
