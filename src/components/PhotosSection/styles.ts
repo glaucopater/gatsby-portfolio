@@ -19,3 +19,7 @@ export const SCImageCaption = styled.div`
     display: flex;
     flex-direction: row;
 `;
+
+export const SCSection = styled.section`
+    padding: 8px;
+`;

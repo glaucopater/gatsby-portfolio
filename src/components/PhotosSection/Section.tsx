@@ -1,4 +1,5 @@
 import React from "react";
+import { SCSection } from "./styles";
 
 export interface Props {
   variant?: "light" | "dark";
@@ -6,7 +7,7 @@ export interface Props {
 }
 
 const Section = ({ variant, ...props }: Props) => (
-  <section {...props}></section>
+  <SCSection {...props} />
 );
 
 export default Section;

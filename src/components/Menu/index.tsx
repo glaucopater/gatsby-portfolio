@@ -1,5 +1,4 @@
 import React from "react";
-import { SCLink } from "../../styles/common";
 import { SCMenuList, SCCollapseMenu, SCExpand, SCMenuContent, SCMenuLink, SCMenuSection } from "./styles";
 
 const CollapseMenu: React.FC = () => {
