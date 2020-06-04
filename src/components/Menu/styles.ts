@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SCLink } from "../../styles/common";
+import { MD } from "../../styles/constants";
 
 
 interface IProps {
@@ -51,7 +52,7 @@ export const SCMenuContent = styled.div<IProps>`
             flex: 1;
         }
     }
-    @media (max-width: 500px) {
+    @media (max-width: ${MD}) {
         flex-direction: column;
     }
 `;
