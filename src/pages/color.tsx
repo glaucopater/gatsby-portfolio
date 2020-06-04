@@ -10,13 +10,13 @@ const ColorPage = () => {
     <Layout>
       <SEO
         lang="en"
-        title="Home"
-        keywords={[`glimpse`, `portfolio`, `galleries`]}
+        title="Street: color"
+        keywords={[`glimpse`, `portfolio`, `photography`, `glauco pater`, `street`, `color`]}
         meta={[]}
       />
       <SCPageContent>
         <CollapseMenu />
-        <PhotosSection style={{ flex: 1 }} section="color" title={"Street / Color"} />
+        <PhotosSection style={{ flex: 1 }} section="color" title={"Street: color"} />
       </SCPageContent>
     </Layout>
   );

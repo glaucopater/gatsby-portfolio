@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { Link } from "rebass";
+import { Link } from "gatsby";
 import { chunk, sum } from "../../utils/array";
 import { SCImg, SCImageCaption } from "./styles";
 import { ColorThiefPalette } from "../ColorThief";
@@ -55,7 +55,7 @@ const Gallery = ({
       {images.map((image, i) => (
         <Link
           key={image.id}
-          href={image.originalImg}
+          to={image.originalImg}
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
             e.preventDefault();
             openModal(i);

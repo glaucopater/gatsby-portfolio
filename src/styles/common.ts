@@ -17,7 +17,7 @@ export const SCMain = styled.main`
 
 export const SCPageContent = styled.div`
   display: flex;
-  place-content: space-around;
+  place-content: space-between;
   margin: 0 auto;
   flex-direction: row;
   @media (max-width: 878px) {

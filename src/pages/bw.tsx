@@ -10,13 +10,13 @@ const BwPage = () => {
     <Layout>
       <SEO
         lang="en"
-        title="Home"
-        keywords={[`glimpse`, `portfolio`, `galleries`]}
+        title="Street: black and white"
+        keywords={[`glimpse`, `portfolio`, `photography`, `glauco pater`, `street`, `black and white`]}
         meta={[]}
       />
       <SCPageContent>
         <CollapseMenu />
-        <PhotosSection style={{ flex: 1 }} section="bw" title={"Street / Black and white"} />
+        <PhotosSection style={{ flex: 1 }} section="bw" title={"Street: black and white"} />
       </SCPageContent>
     </Layout >
   );

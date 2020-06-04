@@ -1,7 +1,7 @@
 {
   "name": "glimpse",
   "description": "a photo portfolio",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "author": "Glauco Pater",
   "dependencies": {
     "@babel/core": "^7.10.2",
@@ -30,7 +30,6 @@
     "react-helmet": "^6.0.0",
     "react-images": "^1.1.7",
     "react-is": "^16.13.1",
-    "rebass": "^4.0.7",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.3"
   },

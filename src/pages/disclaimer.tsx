@@ -4,7 +4,10 @@ import SEO from "../components/seo";
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="Disclaimer" meta={[]} lang="en" />
+    <SEO title="Disclaimer"
+      keywords={[`glimpse`, `portfolio`, `photography`, `glauco pater`]}
+      meta={[]}
+      lang="en" />
     <h2 style={{ margin: "0 1rem" }}>Disclaimer</h2>
     <div style={{ margin: "0 1rem" }}>
       <h3>Liability for content</h3>

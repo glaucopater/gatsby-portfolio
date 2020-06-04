@@ -10,8 +10,8 @@ const ColorPage = () => {
     <Layout>
       <SEO
         lang="en"
-        title="Home"
-        keywords={[`glimpse`, `portfolio`, `galleries`]}
+        title="Abstract"
+        keywords={[`glimpse`, `portfolio`, `photography`, `glauco pater`, `abstract`]}
         meta={[]}
       />
       <SCPageContent>

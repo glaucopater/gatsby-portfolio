@@ -39,7 +39,7 @@ export default ({ data }: { data: any; }) => (
           <SEO
             lang="en"
             title="Home"
-            keywords={[`glimpse`, `portfolio`, `galleries`]}
+            keywords={[`glimpse`, `portfolio`, `photography`, `glauco pater`, `home`]}
             meta={[]}
           />
           <SCPageContent>

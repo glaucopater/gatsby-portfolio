@@ -11,6 +11,8 @@ export const SCCollapseMenu = styled.div<IProps>`
     overflow: hidden;
     flex-basis: ${props => props.isCollapsed ? "5%;" : "25%;"};
     display: flex;
+    ${props => props.isCollapsed ? "justify-content: flex-end;" : null};
+    padding: 8px;
 `;
 
 export const SCExpand = styled.div<IProps>`
@@ -18,11 +20,8 @@ export const SCExpand = styled.div<IProps>`
     transition: all 1s ease;
     text-transform: uppercase;
     opacity: 0.5;
+    align-self: ${props => props.isCollapsed ? "flex-end;" : "flex-start;"};
 
-    @media (min-width: 878px) {
-        text-orientation: upright;
-        writing-mode: vertical-rl;
-    }
     :hover {
         cursor: pointer;
         opacity: 1;
@@ -38,6 +37,20 @@ export const SCMenuContent = styled.div<IProps>`
     transition: all 1s ease;
     padding: 8px 0;
     ${props => props.isCollapsed ? "opacity: 0;" : "opacity: 1;"};
+    @media (max-width: 878px) {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        flex: 1;
+        > div {
+            flex: 1;
+        }
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 `;
 
 export const SCMenuList = styled.ul`
@@ -49,3 +62,6 @@ export const SCMenuLink = styled(SCLink)`
     margin-left: 1rem;
 `;
 
+
+export const SCMenuSection = styled.div`
+`;
