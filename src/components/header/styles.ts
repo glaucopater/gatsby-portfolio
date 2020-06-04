@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { MAXWIDTH } from "../../styles/constants";
+
 
 export const SCHeader = styled.header`
   background: #f8f9fa;
@@ -10,8 +12,8 @@ export const SCHeader = styled.header`
 
 export const SCTitle = styled.div`
   margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 0 0; 
+  max-width: ${MAXWIDTH};
+  padding: 0.5rem 0 0; 
 `;
 
 export const SCDescription = styled.div`

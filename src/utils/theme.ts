@@ -1,4 +1,4 @@
-import { Heading, Link } from 'rebass';
+import { Link } from 'gatsby';
 
 const theme = {
   breakpoints: [600, 1024, 1440, 1920],
@@ -28,16 +28,5 @@ const theme = {
   },
 };
 
-Heading.defaultProps = {
-  ...Heading.defaultProps,
-  as: 'h1',
-  fontSize: '2rem',
-  fontFamily: 'mono',
-};
-
-Link.defaultProps = {
-  ...Link.defaultProps,
-  color: 'red',
-};
 
 export default theme;

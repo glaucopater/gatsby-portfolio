@@ -1,5 +1,4 @@
 import React from "react";
-import { Box } from "rebass";
 
 export interface Props {
   variant?: "light" | "dark";
@@ -7,12 +6,7 @@ export interface Props {
 }
 
 const Section = ({ variant, ...props }: Props) => (
-  <Box
-    m={3}
-    as="section"
-    {...(variant === "dark" && { bg: "darkgray", color: "white" })}
-    {...props}
-  />
+  <section {...props}></section>
 );
 
 export default Section;

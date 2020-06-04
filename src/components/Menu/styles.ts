@@ -38,6 +38,20 @@ export const SCMenuContent = styled.div<IProps>`
     transition: all 1s ease;
     padding: 8px 0;
     ${props => props.isCollapsed ? "opacity: 0;" : "opacity: 1;"};
+    @media (max-width: 878px) {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        flex: 1;
+        > div {
+            flex: 1;
+        }
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 `;
 
 export const SCMenuList = styled.ul`
@@ -47,5 +61,9 @@ export const SCMenuList = styled.ul`
 
 export const SCMenuLink = styled(SCLink)`
     margin-left: 1rem;
+`;
+
+
+export const SCMenuSection = styled.div`
 `;
 
