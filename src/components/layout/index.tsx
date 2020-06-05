@@ -4,6 +4,7 @@ import Header from "../header/index";
 import Footer from "../footer/index";
 import "./layout.css";
 import { SCPagecontent } from "./styles";
+import Sticky from "../Sticky";
 
 const Layout = ({ children }: { children: any; }) => (
   <StaticQuery
@@ -11,6 +12,7 @@ const Layout = ({ children }: { children: any; }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
+            title
             description
             author
             version
@@ -20,7 +22,16 @@ const Layout = ({ children }: { children: any; }) => (
     `}
     render={(data) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
+        {/* <Sticky top={100} child={
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          description={data.site.siteMetadata.description}
+        />}>
+        </Sticky>1 */}
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          description={data.site.siteMetadata.description}
+        />
         <SCPagecontent>
           <main>{children}</main>
         </SCPagecontent>
