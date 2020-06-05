@@ -7,15 +7,15 @@ export const SCHeader = styled.header`
   background: #f8f9fa;
   color: #111;
   font-family: Virgil; 
-  margin: 3px;
+  margin: 0 1rem;
 `;
 
-export const SCTitle = styled.div`
+export const SCTitle = styled.h1`
   margin: 0 auto;
   max-width: ${MAXWIDTH};
-  padding: 0.5rem 0 0; 
+  margin: 0 2rem;
 `;
 
-export const SCDescription = styled.div`
+export const SCDescription = styled.h2`
   margin: 0 2rem;
 `;

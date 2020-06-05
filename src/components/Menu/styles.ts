@@ -37,7 +37,6 @@ export const SCExpand = styled.div<IProps>`
 export const SCMenuContent = styled.div<IProps>`
     transition: all 1s ease;
     padding: 32px 0 32px 32px;
-    
     ${props => props.isCollapsed ? "opacity: 0;" : "opacity: 1;"};
 
     @media (max-width: 878px) {
@@ -50,6 +49,7 @@ export const SCMenuContent = styled.div<IProps>`
         flex: 1;
         > div {
             flex: 1;
+            padding: 8px;
         }
     }
     @media (max-width: ${MD}) {
