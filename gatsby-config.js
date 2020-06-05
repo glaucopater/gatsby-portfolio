@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `GlimPse`,
+    title: `Glauco Pater`,
     description: `Glauco Pater Photography Projects`,
     author: `Glauco Pater`,
     version: `2.0.7`,

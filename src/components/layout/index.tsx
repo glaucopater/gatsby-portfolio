@@ -4,7 +4,6 @@ import Header from "../header/index";
 import Footer from "../footer/index";
 import "./layout.css";
 import { SCPagecontent } from "./styles";
-import Sticky from "../Sticky";
 
 const Layout = ({ children }: { children: any; }) => (
   <StaticQuery
@@ -12,7 +11,6 @@ const Layout = ({ children }: { children: any; }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
             description
             author
             version
